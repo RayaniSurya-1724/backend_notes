@@ -9,10 +9,17 @@ fs.appendFile("hi.txt","he is a student",function(err){
     }
 })
 
-fs.rename("hi.txt","hello.txt",function(err){
-    if(err){
-        console.error(err);
-    }
+// fs.rename("hi.txt","hello.txt",function(err){
+//     if(err){
+//         console.error(err);
+//     }
+//     else{
+//         console.log("done");
+//     }
+// })
+
+fs.copyFile("hello.txt","./hii.txt",function(err){
+    if (err) console.error(err);
     else{
         console.log("done");
     }
