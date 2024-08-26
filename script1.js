@@ -1,4 +1,5 @@
 const fs = require('fs');
+const http = require('http');
 
 fs.appendFile("hi.txt","he is a student",function(err){
     if(err){
@@ -24,3 +25,9 @@ fs.copyFile("hello.txt","./hii.txt",function(err){
         console.log("done");
     }
 })
+
+const server =http.createServer(function(req,res){
+    res.end("hello world");
+})
+
+server.listen(3000);
