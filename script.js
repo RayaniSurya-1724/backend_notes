@@ -24,5 +24,6 @@ var fin = arr.find(function(val){
     }
 })
 
-console.log(fin);
+console.log(arr.indexOf(fin));
+
 
