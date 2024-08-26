@@ -9,3 +9,12 @@ var newarr = arr.map(function(val){
 })
 
 console.log(newarr);
+
+var ans = arr.filter(function(val){
+    if (val>=2){
+        return true;
+    }
+})
+
+console.log(ans);
+
