@@ -26,4 +26,11 @@ var fin = arr.find(function(val){
 
 console.log(arr.indexOf(fin));
 
+var obj = {
+    name: "surya",
+    age:20
+}
+Object.freeze(obj);
+obj.age=19;
+
 
