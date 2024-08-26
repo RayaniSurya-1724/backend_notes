@@ -33,4 +33,10 @@ var obj = {
 Object.freeze(obj);
 obj.age=19;
 
+function change(){
+    return 24;
+}
+
+console.log(change());
+
 
