@@ -39,4 +39,13 @@ function change(){
 
 console.log(change());
 
+async function man(){
+    var ans = await fetch(`https://randomuser.me/api/`);
+    var blob = await ans.json();
+
+    console.log(blob);
+}
+
+
+man();
 
