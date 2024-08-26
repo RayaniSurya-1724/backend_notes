@@ -18,3 +18,11 @@ var ans = arr.filter(function(val){
 
 console.log(ans);
 
+var fin = arr.find(function(val){
+    if (val==2){
+        return val;
+    }
+})
+
+console.log(fin);
+
